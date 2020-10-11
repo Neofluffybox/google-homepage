@@ -1,0 +1,1 @@
+This website will be a google homepage look-alike. I'll be demonstrating my basic understanding of html and CSS thusfar. 
