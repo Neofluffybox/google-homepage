@@ -1,74 +1,212 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-#Gimage {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 22%;
-    left: 38%;
-}
-
-.container{
-    min-height: 30px;
-    width: 100%;
-    font-size: 15px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.container2{
-    font-size: 15px;
-    min-height: 30px;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-}
-
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.search {
+header {
+  height: 150px;
   width: 100%;
-  position: relative;
-  display: flex;
 }
 
-.searchTerm {
+ul {
+  display: block;
+  list-style-type: none;
+  float: right;
+  background-color:white;
+  overflow: hidden;
+  font-size: 16px;  
+}
+
+#fill {
+  visibility: hidden;
+}
+
+#dot {
+  background-image: url(dots.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+#dot:hover {
+  background-image: url(dots2.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.pix {
   width: 100%;
-  border: 3px solid #00B4CC;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
+  height: 250px;
 }
 
-.searchTerm:focus{
-  color: #00B4CC;
+li a {
+  display: block;
+  block-size: 20px;
+  writing-mode: horizontal-tb;
+  color: #333333;
+  text-decoration: none;
+  margin: 12px;
+  font-size: 12px;
 }
 
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
+li a:hover {
+  color: #33f;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
+li {
+  float: right;
+}
+
+#logo {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 28%;
+  top: 28%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bar {
+  position: absolute;
+  top: 45%;
+  width: 630px;
+  margin: 35px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+form input {
+  padding: 10px;
+  font-size: 17px;
+  border: 3px solid rgba(200,200,200,.6);
+  border-right: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  float: left;
+  width: 60%;
+  background: white;
+  position: relative;
+  margin-left: 10%;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline-width: 0;
+}
+
+form button {
+  float: left;
+  width: 35px;
+  height: 51px;
+  padding: 10px;
+  background: url(mic.png);
+  background-size: 20px 25px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  color: white;
+  font-size: 17px;
+  border: 3px solid rgba(200,200,200,.6);
+  border-left: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+form button:focus {
+  outline-width: 0;
+}
+
+.shortcuts {
+  position: absolute;
+  background-color: white;
+  list-style-type: none;
+  text-align: center;
+  padding: 18px;
+  width: 100%;
+  top: 60%; 
+  left:20px;
+
+}
+
+.shortcuts li:hover{
+  background-color: #bbb;
+}
+
+ul.shortcuts li{
+  display: inline-block;
+  font-size: 20px;
+  padding: 18px;
+  position: relative;
+  left: -12%;
+
+}
+
+ul.shortcuts li a{
+  display:block;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(220,220,220,.3);
+  border-radius: 50%;
+  text-align: center;
+}
+
+#scpic {
+  display: block;
+  position: relative;
+  padding: 25px;
+  background-image: url(plus.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  top: 30%;
+  left: 30%;
+}
+
+#scpic2 {
+  display: block;
+  position: relative;
+  padding: 25px;
+  background-image: url(square.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  top: 30%;
+  left: 30%;
+}
+
+#scpic3 {
+  display: block;
+  position: relative;
+  padding: 25px;
+  background-image: url(circle.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 10%;
+}
+
+#scpic4 {
+  display: block;
+  position: relative;
+  padding: 25px;
+  background-image: url(boom.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 20%;
+}
+
+.final {
+  position: absolute;
+  bottom:2%;
+  left: 30%;
+}
+
+#youtubs{
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  padding-top: 10px;
+  background-image: url(play.png);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+}
+
+#words {
+  display:inline-block;
+  font-size: 14px;
+  position: relative;
+  left: 5%;
+  padding-bottom: 10px;
 }
